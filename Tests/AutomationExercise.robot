@@ -55,6 +55,14 @@ Test Case 03
     Click Home button and verify that landed to home page successfully
 
 Test Case 04
+    [Documentation]    Verify Subscription in home page
+    Verify that home page is visible successfully
+    Scroll down to footer
+    Verify text SUBSCRIPTION
+    Enter email address in input and click arrow button
+    Verify success message You have been successfully subscribed! is visible
+
+Test Case 05
     [Documentation]    Login And Delete User
     Verify that home page is visible successfully
     Click on Signup / Login button

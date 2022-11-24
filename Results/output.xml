@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.11.0 on darwin)" generated="20221124 23:59:57.946" rpa="false" schemaversion="3">
+<suite id="s1" name="RobotFramework-Exercises" source="/Users/yusufrenkoglu/Library/Mobile Documents/com~apple~CloudDocs/Projects/RobotFramework/RobotFramework-Exercises">
+<suite id="s1-s1" name="Tests" source="/Users/yusufrenkoglu/Library/Mobile Documents/com~apple~CloudDocs/Projects/RobotFramework/RobotFramework-Exercises/Tests">
+<suite id="s1-s1-s1" name="AutomationExercise" source="/Users/yusufrenkoglu/Library/Mobile Documents/com~apple~CloudDocs/Projects/RobotFramework/RobotFramework-Exercises/Tests/AutomationExercise.robot">
+<test id="s1-s1-s1-t1" name="Test Case 04" line="57">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221124 23:59:58.132" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com/'.</msg>
+<status status="PASS" starttime="20221124 23:59:58.131" endtime="20221125 00:00:04.053"/>
+</kw>
+<kw name="Verify that home page is visible successfully" library="HomePage">
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20221125 00:00:04.059" level="INFO">Current location is 'https://automationexercise.com/'.</msg>
+<status status="PASS" starttime="20221125 00:00:04.054" endtime="20221125 00:00:04.059"/>
+</kw>
+<status status="PASS" starttime="20221125 00:00:04.053" endtime="20221125 00:00:04.059"/>
+</kw>
+<kw name="Scroll down to footer" library="HomePage">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, 10000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221125 00:00:04.061" level="INFO">Executing JavaScript:
+window.scrollTo(0, 10000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20221125 00:00:04.060" endtime="20221125 00:00:04.075"/>
+</kw>
+<status status="PASS" starttime="20221125 00:00:04.059" endtime="20221125 00:00:04.075"/>
+</kw>
+<kw name="Verify text SUBSCRIPTION" library="HomePage">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${subscriptionText}</var>
+<arg>${subscription}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221125 00:00:04.875" level="INFO">${subscriptionText} = SUBSCRIPTION</msg>
+<status status="PASS" starttime="20221125 00:00:04.076" endtime="20221125 00:00:04.875"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${subscriptionText}</arg>
+<arg>SUBSCRIPTION</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221125 00:00:04.876" endtime="20221125 00:00:04.876"/>
+</kw>
+<status status="PASS" starttime="20221125 00:00:04.076" endtime="20221125 00:00:04.877"/>
+</kw>
+<kw name="Enter email address in input and click arrow button" library="HomePage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${subscriptionEmailInput}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221125 00:00:04.879" level="INFO">Typing text 'test.qamail1@gmail.com' into text field '//*[@id="susbscribe_email"]'.</msg>
+<status status="PASS" starttime="20221125 00:00:04.878" endtime="20221125 00:00:05.053"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${subscriptionButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221125 00:00:05.054" level="INFO">Clicking button '//*[@id="subscribe"]'.</msg>
+<status status="PASS" starttime="20221125 00:00:05.053" endtime="20221125 00:00:05.123"/>
+</kw>
+<status status="PASS" starttime="20221125 00:00:04.877" endtime="20221125 00:00:05.123"/>
+</kw>
+<kw name="Verify success message You have been successfully subscribed! is visible" library="HomePage">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${subscriptionVerifyText}</var>
+<arg>${subscriptionVerify}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221125 00:00:05.152" level="INFO">${subscriptionVerifyText} = You have been successfully subscribed!</msg>
+<status status="PASS" starttime="20221125 00:00:05.124" endtime="20221125 00:00:05.152"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${subscriptionVerifyText}</arg>
+<arg>You have been successfully subscribed!</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20221125 00:00:05.152" endtime="20221125 00:00:05.153"/>
+</kw>
+<status status="PASS" starttime="20221125 00:00:05.123" endtime="20221125 00:00:05.153"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20221125 00:00:05.153" endtime="20221125 00:00:05.361"/>
+</kw>
+<doc>Verify Subscription in home page</doc>
+<status status="PASS" starttime="20221124 23:59:58.130" endtime="20221125 00:00:05.362"/>
+</test>
+<doc>www.automationexercise.com Test Cases</doc>
+<status status="PASS" starttime="20221124 23:59:57.974" endtime="20221125 00:00:05.364"/>
+</suite>
+<status status="PASS" starttime="20221124 23:59:57.971" endtime="20221125 00:00:05.366"/>
+</suite>
+<status status="PASS" starttime="20221124 23:59:57.951" endtime="20221125 00:00:05.369"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RobotFramework-Exercises">RobotFramework-Exercises</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">RobotFramework-Exercises.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="AutomationExercise">RobotFramework-Exercises.Tests.AutomationExercise</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

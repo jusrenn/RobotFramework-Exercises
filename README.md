@@ -42,7 +42,16 @@
 <li>Click Home button and verify that landed to home page successfully</li>
 </ul>
 
-<h3>Test Case 04: Login And Delete User</h3>
+<h3>Verify Subscription in home page</h3>
+<ul>
+<li>Verify that home page is visible successfully</li>
+<li>Scroll down to footer</li>
+<li>Verify text SUBSCRIPTION</li>
+<li>Enter email address in input and click arrow button</li>
+<li>Verify success message You have been successfully subscribed! is visible</li>
+</ul>
+
+<h3>Test Case 05: Login And Delete User</h3>
 <ul>
 <li>Click on Signup / Login button</li>
 <li>Verify Login to your account is visible</li>

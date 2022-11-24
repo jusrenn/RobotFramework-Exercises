@@ -24,3 +24,18 @@ Click Logout button
 
 Click on Contact Us button
     Go To                 ${contactUsLink}
+
+Scroll down to footer
+    Execute Javascript    window.scrollTo(0, 10000)
+
+Verify text SUBSCRIPTION
+    ${subscriptionText}    Get Text    ${subscription}
+    Should Be Equal    ${subscriptionText}    SUBSCRIPTION
+
+Enter email address in input and click arrow button
+    Input Text         ${subscriptionEmailInput}    ${email}
+    Click Button       ${subscriptionButton}
+
+Verify success message You have been successfully subscribed! is visible
+    ${subscriptionVerifyText}    Get Text    ${subscriptionVerify}
+    Should Be Equal    ${subscriptionVerifyText}    You have been successfully subscribed!

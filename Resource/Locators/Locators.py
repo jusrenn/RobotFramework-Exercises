@@ -4,6 +4,10 @@ loggedInAsUsernameText = '//*[@id="header"]/div/div/div/div[2]/div/ul/li[10]/a'
 deleteAccountLink = '//*[@id="header"]/div/div/div/div[2]/div/ul/li[5]/a'
 logoutLink = 'https://automationexercise.com/logout'
 contactUsLink = 'https://automationexercise.com/contact_us'
+subscription = '//*[@id="footer"]/div[2]/div/div/div[2]/div/h2'
+subscriptionEmailInput = '//*[@id="susbscribe_email"]'
+subscriptionButton = '//*[@id="subscribe"]'
+subscriptionVerify = '//*[@id="success-subscribe"]/div'
 
 # SignupLoginPage Locators
 newUserSignup = '//*[@id="form"]/div/div/div[3]/div/h2'
