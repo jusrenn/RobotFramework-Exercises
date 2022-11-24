@@ -29,7 +29,7 @@
 <li>Click Logout button</li>
 </ul>
 
-<h3>Contact Us Form</h3>
+<h3>Test Case 03: Contact Us Form</h3>
 <ul>
 <li>Verify that home page is visible successfully</li>
 <li>Click on Contact Us button</li>
