@@ -42,7 +42,7 @@
 <li>Click Home button and verify that landed to home page successfully</li>
 </ul>
 
-<h3>Verify Subscription in home page</h3>
+<h3>Test Case 04: Verify Subscription in home page</h3>
 <ul>
 <li>Verify that home page is visible successfully</li>
 <li>Scroll down to footer</li>
