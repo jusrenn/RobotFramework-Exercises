@@ -4,9 +4,6 @@ Library    SeleniumLibrary
 Variables    ../Locators/Locators.py
 Variables    ../TestData/TestData.py
 
-*** Variables ***
-
-
 *** Keywords ***
 Verify that home page is visible successfully
     Location Should Be    ${url}
@@ -24,3 +21,6 @@ Click Delete Account button
 Click Logout button
     Go To                 ${logoutLink}
     Go To                 ${url}
+
+Click on Contact Us button
+    Go To                 ${contactUsLink}

@@ -3,6 +3,7 @@ signupLoginLink = 'https://automationexercise.com/login'
 loggedInAsUsernameText = '//*[@id="header"]/div/div/div/div[2]/div/ul/li[10]/a'
 deleteAccountLink = '//*[@id="header"]/div/div/div/div[2]/div/ul/li[5]/a'
 logoutLink = 'https://automationexercise.com/logout'
+contactUsLink = 'https://automationexercise.com/contact_us'
 
 # SignupLoginPage Locators
 newUserSignup = '//*[@id="form"]/div/div/div[3]/div/h2'
@@ -13,7 +14,6 @@ loginToYourAccount = '//*[@id="form"]/div/div/div[1]/div/h2'
 emailInputLoginPage = '//*[@id="form"]/div/div/div[1]/div/form/input[2]'
 passwordInputLoginPage = '//*[@id="form"]/div/div/div[1]/div/form/input[3]'
 loginButton = '//*[@id="form"]/div/div/div[1]/div/form/button'
-
 
 # RegistrationPage Locators
 registrationPageText = '//*[@id="form"]/div/div/div/div[1]/h2/b'
@@ -40,3 +40,14 @@ createAccountButton = '//*[@id="form"]/div/div/div/div[1]/form/button'
 accountCreated = '//*[@id="form"]/div/div/div/h2/b'
 continueButton = '//*[@id="form"]/div/div/div/div/a'
 accountDeleted = '//*[@id="form"]/div/div/div/h2/b'
+
+# ContactUsPage Locators
+getInTouch = '//*[@id="contact-page"]/div[2]/div[1]/div/h2'
+nameInputContactPage = '//*[@id="contact-us-form"]/div[1]/input'
+emailInputContactPage = '//*[@id="contact-us-form"]/div[2]/input'
+subjectInput = '//*[@id="contact-us-form"]/div[3]/input'
+messageTextarea = '//*[@id="message"]'
+uploadFileButton = '//*[@id="contact-us-form"]/div[5]/input'
+submitContactForm = '//*[@id="contact-us-form"]/div[6]/input'
+successMessage = '//*[@id="contact-page"]/div[2]/div[1]/div/div[2]'
+homeButton = '//*[@id="form-section"]/a'

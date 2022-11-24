@@ -6,6 +6,7 @@ Resource         ../Resource/Keywords/HomePage.robot
 Resource         ../Resource/Keywords/SignupLoginPage.robot
 Resource         ../Resource/Keywords/RegistrationPage.robot
 Resource         ../Resource/Keywords/AccountVerifyPage.robot
+Resource         ../Resource/Keywords/ContactUsPage.robot
 
 Variables        ../Resource/TestData/TestData.py
 Variables        ../Resource/Locators/Locators.py
@@ -42,7 +43,20 @@ Test Case 02
     Click Logout button
 
 Test Case 03
+    [Documentation]    Contact Us Form
+    Verify that home page is visible successfully
+    Click on Contact Us button
+    Verify GET IN TOUCH is visible
+    Enter name, email, subject and message    This is test subject    This is test message
+    Upload file    /Users/yusufrenkoglu/Desktop/testfile.txt
+    Click Submit button
+    Click OK button
+    Verify success message Success! Your details have been submitted successfully. is visible
+    Click Home button and verify that landed to home page successfully
+
+Test Case 04
     [Documentation]    Login And Delete User
+    Verify that home page is visible successfully
     Click on Signup / Login button
     Verify Login to your account is visible
     Fill Email and Password
