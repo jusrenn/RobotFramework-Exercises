@@ -29,7 +29,20 @@
 <li>Click Logout button</li>
 </ul>
 
-<h3>Test Case 03: Login And Delete User</h3>
+<h3>Contact Us Form</h3>
+<ul>
+<li>Verify that home page is visible successfully</li>
+<li>Click on Contact Us button</li>
+<li>Verify GET IN TOUCH is visible</li>
+<li>Enter name, email, subject and message</li>
+<li>Upload file</li>
+<li>Click Submit button</li>
+<li>Click OK button</li>
+<li>Verify success message Success! Your details have been submitted successfully. is visible</li>
+<li>Click Home button and verify that landed to home page successfully</li>
+</ul>
+
+<h3>Test Case 04: Login And Delete User</h3>
 <ul>
 <li>Click on Signup / Login button</li>
 <li>Verify Login to your account is visible</li>
