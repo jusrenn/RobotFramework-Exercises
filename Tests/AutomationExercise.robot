@@ -2,7 +2,6 @@
 Documentation    www.automationexercise.com Test Cases
 Library          SeleniumLibrary
 
-Resource         ../Resource/Keywords/Common.robot
 Resource         ../Resource/Keywords/HomePage.robot
 Resource         ../Resource/Keywords/SignupLoginPage.robot
 Resource         ../Resource/Keywords/RegistrationPage.robot
