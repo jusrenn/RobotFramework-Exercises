@@ -32,7 +32,6 @@ Test Case 01
     Click Continue button
     Verify that Logged in as username is visible
     Click Logout button
-    Sleep    1s
 
 Test Case 02
     [Documentation]    Login
@@ -44,7 +43,7 @@ Test Case 02
     Click Logout button
 
 Test Case 03
-    [Documentation]    Delete User
+    [Documentation]    Login And Delete User
     Click on Signup / Login button
     Verify Login to your account is visible
     Fill Email and Password
